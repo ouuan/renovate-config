@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "timezone": "Asia/Shanghai",
   "schedule": [
-    "on the 7th through 9th day of the month"
+    "every weekend"
   ],
   "prConcurrentLimit": 2,
   "separateMajorMinor": true,
