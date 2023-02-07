@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "local>ouuan/renovate-config",
+    ":pinOnlyDevDependencies"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "timezone": "Asia/Shanghai",
+  "schedule": [
+    "on the 7th through 9th day of the month"
+  ],
+  "prConcurrentLimit": 2,
+  "separateMajorMinor": true,
+  "extends": [
+    ":dependencyDashboard",
+    ":enableVulnerabilityAlerts",
+    ":ignoreModulesAndTests",
+    ":autodetectRangeStrategy",
+    ":prConcurrentLimit20",
+    ":prNotPending",
+    ":rebaseStalePrs",
+    ":renovatePrefix",
+    ":semanticCommits",
+    ":semanticCommitType(chore)",
+    ":automergeBranch",
+    ":automergeRequireAllStatusChecks",
+    ":automergeTesters",
+    "group:monorepos",
+    "group:recommended",
+    "workarounds:all"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "dependencyDashboardApproval": true
+    },
+    {
+      "groupName": "DefinitelyTyped",
+      "automerge": true,
+      "matchPackagePrefixes": [
+        "@types/"
+      ]
+    },
+    {
+      "groupName": "linters",
+      "automerge": true,
+      "extends": [
+        "packages:linters"
+      ]
+    },
+    {
+      "groupName": "iles",
+      "matchSourceUrls": [
+        "https://github.com/ElMassimo/iles"
+      ]
+    },
+    {
+      "groupName": "all patch dependencies",
+      "groupSlug": "all-patch",
+      "matchUpdateTypes": [
+        "patch"
+      ]
+    }
+  ]
+}
