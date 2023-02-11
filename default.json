@@ -11,8 +11,6 @@
     ":enableVulnerabilityAlerts",
     ":ignoreModulesAndTests",
     ":autodetectRangeStrategy",
-    ":prConcurrentLimit20",
-    ":prNotPending",
     ":rebaseStalePrs",
     ":renovatePrefix",
     ":semanticCommits",
