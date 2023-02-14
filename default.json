@@ -22,6 +22,12 @@
     "group:recommended",
     "workarounds:all"
   ],
+  "lockFileMaintenance": {
+    "automerge": true
+  },
+  "pin": {
+    "automerge": true
+  },
   "packageRules": [
     {
       "matchUpdateTypes": [
