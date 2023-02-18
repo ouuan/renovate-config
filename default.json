@@ -50,6 +50,12 @@
       ]
     },
     {
+      "groupName": "vueuse",
+      "matchSourceUrls": [
+        "https://github.com/vueuse/vueuse"
+      ]
+    },
+    {
       "groupName": "iles",
       "matchSourceUrls": [
         "https://github.com/ElMassimo/iles"
