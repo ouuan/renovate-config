@@ -61,7 +61,8 @@
     {
       "groupName": "unocss",
       "matchSourceUrls": [
-        "https://github.com/unocss/unocss"
+        "https://github.com/unocss/unocss",
+        "https://github.com/antfu/unocss"
       ]
     },
     {
