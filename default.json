@@ -30,26 +30,10 @@
   },
   "packageRules": [
     {
+      "groupName": "all patch dependencies",
+      "groupSlug": "all-patch",
       "matchUpdateTypes": [
-        "major"
-      ],
-      "dependencyDashboardApproval": true
-    },
-    {
-      "groupName": "types",
-      "automerge": true,
-      "matchPackagePrefixes": [
-        "@types/"
-      ],
-      "matchPackageNames": [
-        "@cloudflare/workers-types"
-      ]
-    },
-    {
-      "groupName": "linters",
-      "automerge": true,
-      "extends": [
-        "packages:linters"
+        "patch"
       ]
     },
     {
@@ -72,11 +56,27 @@
       ]
     },
     {
-      "groupName": "all patch dependencies",
-      "groupSlug": "all-patch",
-      "matchUpdateTypes": [
-        "patch"
+      "groupName": "types",
+      "automerge": true,
+      "matchPackagePrefixes": [
+        "@types/"
+      ],
+      "matchPackageNames": [
+        "@cloudflare/workers-types"
       ]
+    },
+    {
+      "groupName": "linters",
+      "automerge": true,
+      "extends": [
+        "packages:linters"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "dependencyDashboardApproval": true
     }
   ]
 }
