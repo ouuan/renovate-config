@@ -36,10 +36,13 @@
       "dependencyDashboardApproval": true
     },
     {
-      "groupName": "DefinitelyTyped",
+      "groupName": "types",
       "automerge": true,
       "matchPackagePrefixes": [
         "@types/"
+      ],
+      "matchPackageNames": [
+        "@cloudflare/workers-types"
       ]
     },
     {
