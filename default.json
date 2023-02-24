@@ -56,6 +56,12 @@
       ]
     },
     {
+      "groupName": "unocss",
+      "matchSourceUrls": [
+        "https://github.com/unocss/unocss"
+      ]
+    },
+    {
       "groupName": "iles",
       "matchSourceUrls": [
         "https://github.com/ElMassimo/iles"
