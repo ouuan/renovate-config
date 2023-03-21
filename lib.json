@@ -1,6 +1,25 @@
 {
   "extends": [
-    "local>ouuan/renovate-config",
-    ":pinOnlyDevDependencies"
+    "local>ouuan/renovate-config"
+  ],
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "rangeStrategy": "bump"
+    },
+    {
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "rangeStrategy": "pin"
+    },
+    {
+      "matchDepTypes": [
+        "peerDependencies"
+      ],
+      "rangeStrategy": "widen"
+    }
   ]
 }
