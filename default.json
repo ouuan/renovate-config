@@ -56,14 +56,13 @@
       ]
     },
     {
-      "groupName": "types",
-      "automerge": true,
       "matchPackagePrefixes": [
         "@types/"
       ],
       "matchPackageNames": [
         "@cloudflare/workers-types"
-      ]
+      ],
+      "automerge": true
     },
     {
       "groupName": "linters",
