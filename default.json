@@ -77,6 +77,13 @@
         "major"
       ],
       "dependencyDashboardApproval": true
+    },
+    {
+      "matchCategories": [
+        "ci",
+        "docker"
+      ],
+      "dependencyDashboardApproval": false
     }
   ]
 }
