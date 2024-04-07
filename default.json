@@ -30,13 +30,6 @@
   },
   "packageRules": [
     {
-      "groupName": "all patch dependencies",
-      "groupSlug": "all-patch",
-      "matchUpdateTypes": [
-        "patch"
-      ]
-    },
-    {
       "groupName": "vueuse",
       "matchSourceUrls": [
         "https://github.com/vueuse/vueuse"
@@ -54,6 +47,12 @@
       "matchSourceUrls": [
         "https://github.com/ElMassimo/iles"
       ]
+    },
+    {
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "automerge": true
     },
     {
       "matchPackagePrefixes": [
