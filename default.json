@@ -23,6 +23,7 @@
     "workarounds:all"
   ],
   "lockFileMaintenance": {
+    "enabled": true,
     "automerge": true
   },
   "pin": {
